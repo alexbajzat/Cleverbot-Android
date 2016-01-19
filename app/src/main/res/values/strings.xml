@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">cleverbot</string>
+    <string name="msg_ok">Ok</string>
+    <string name="msg_typeHere">Type here...</string>
+    <string name="msg_saysomething">Say something pls</string>
+    <string name="msg_clevy">"Clevy: "</string>
+    <string name="msg_nointernet">: NO internet no chicks</string>
+    <string name="msg_asksomething">"Ask me something :) "</string>
+</resources>
