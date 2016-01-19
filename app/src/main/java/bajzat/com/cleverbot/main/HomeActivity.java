@@ -1,4 +1,4 @@
-package bajzat.com.cleverbot;
+package bajzat.com.cleverbot.main;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import bajzat.com.cleverbot.R;
 import bajzat.com.cleverbot.models.Suggestion;
 import bajzat.com.cleverbot.service.Backend;
 import retrofit.Callback;

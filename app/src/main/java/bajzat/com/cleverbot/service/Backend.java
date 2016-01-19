@@ -1,8 +1,6 @@
 package bajzat.com.cleverbot.service;
 
-import bajzat.com.cleverbot.ApiService;
 import retrofit.RestAdapter;
-import retrofit.RetrofitError;
 
 /**
  * Created by name on 19/01/2016.
