@@ -9,7 +9,13 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".main.HomeActivity">
+
+
+        <activity
+            android:name=".main.HomeActivity"
+            android:windowSoftInputMode="adjustResize|adjustPan">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
