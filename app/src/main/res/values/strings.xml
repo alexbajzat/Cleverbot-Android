@@ -6,4 +6,5 @@
     <string name="msg_clevy">"Clevy: "</string>
     <string name="msg_nointernet">: NO internet no chicks</string>
     <string name="msg_asksomething">"Ask me something :) "</string>
+    <string name="msg_git">"My GitHub Repository"</string>
 </resources>
