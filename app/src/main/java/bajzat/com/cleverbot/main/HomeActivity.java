@@ -1,5 +1,7 @@
 package bajzat.com.cleverbot.main;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +9,9 @@ import android.text.Editable;
 import android.text.Html;
 import android.text.TextUtils;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.TextureView;
 import android.view.View;
 import android.view.WindowManager;
@@ -32,7 +37,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     private Backend backend;
     private boolean uploadNext = false;
     private String outputString = "";
-
+    private final String GIT="https://github.com/alexbajzat?tab=repositories";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +48,33 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         inputEditText.setOnEditorActionListener(this);
         backend = new Backend();
 
+
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.activity_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.git:
+                goToRepository();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void goToRepository() {
+        Intent browse = new Intent( Intent.ACTION_VIEW , Uri.parse(GIT) );
+
+        startActivity( browse );
 
     }
 
@@ -90,6 +122,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
 
         }
+
 
         @Override
         public void failure(RetrofitError error) {
