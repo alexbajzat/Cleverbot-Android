@@ -37,7 +37,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     private Backend backend;
     private boolean uploadNext = false;
     private String outputString = "";
-    private final String GIT="https://github.com/alexbajzat?tab=repositories";
+    private final String GIT = getString(R.string.repo_url);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,9 +72,9 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void goToRepository() {
-        Intent browse = new Intent( Intent.ACTION_VIEW , Uri.parse(GIT) );
+        Intent browse = new Intent(Intent.ACTION_VIEW, Uri.parse(GIT));
 
-        startActivity( browse );
+        startActivity(browse);
 
     }
 
