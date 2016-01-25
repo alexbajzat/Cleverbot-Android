@@ -7,4 +7,5 @@
     <string name="msg_nointernet">: NO internet no chicks</string>
     <string name="msg_asksomething">"Ask me something :) "</string>
     <string name="msg_git">"My GitHub Repository"</string>
+    <string name="repo_url">https://github.com/alexbajzat/Cleverbot-Android</string>
 </resources>
